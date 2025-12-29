@@ -112,14 +112,14 @@ export default function WhitepaperPage() {
     <div className={styles.row}>
       <div>10%</div>
       <div>Team</div>
-      <div>Lock / 5</div>
+      <div>Lock / 3</div>
       <div>2 000 000</div>
     </div>
 
     <div className={styles.row}>
       <div>5%</div>
       <div>Founder</div>
-      <div>Lock / 5</div>
+      <div>Lock / 3</div>
       <div>1 000 000</div>
     </div>
 
