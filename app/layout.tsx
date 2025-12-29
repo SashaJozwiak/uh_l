@@ -45,20 +45,20 @@ export const metadata: Metadata = {
     alternateLocale: ['ru_RU'],
     url: siteUrl,
     siteName: 'YouHold',
-    title: 'YouHold - Cryptocurrency Investment Fund | Token Buyback & Burn',
+    title: 'YouHold - Cryptocurrency Fund | Token Buyback & Burn',
     description: 'Open-ended cryptocurrency fund managing diversified assets and a software and gaming development studio. 50% of profits go to token buyback and burn.',
     images: [
       {
         url: `${siteUrl}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: 'YouHold - Cryptocurrency Investment Fund',
+        alt: 'YouHold - Cryptocurrency Fund',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'YouHold - Cryptocurrency Investment Fund',
+    title: 'YouHold - Cryptocurrency Fund',
     description: 'Open-ended cryptocurrency fund managing diversified assets and a software and gaming development studio.',
     images: [`${siteUrl}/og-image.jpg`],
     creator: '@youhold',
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     },
   },
   category: 'Finance',
-  classification: 'Cryptocurrency Investment Fund',
+  classification: 'Cryptocurrency Fund',
   other: {
     'apple-mobile-web-app-capable': 'yes',
     'apple-mobile-web-app-status-bar-style': 'black-translucent',

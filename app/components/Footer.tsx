@@ -11,7 +11,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.copyright}>
-            <p>© 2024-2026 YouHold {/* {t('footer.rights')} */}</p>
+            <p>© 2024-2026 | YouHold.online {/* {t('footer.rights')} */}</p>
           </div>
           <div>
 
@@ -20,7 +20,6 @@ export default function Footer() {
       onClick={() => window.open('https://t.me/youhold_chat', '_blank', 'noopener,noreferrer')}
       >
         <span>Support Chat</span>
-
         <svg
           width="20"
           height="20"
@@ -52,7 +51,7 @@ export default function Footer() {
         </svg>
             </a>
             <a 
-              href="https://twitter.com/youhold" 
+              href="https://x.com/youholdofficial" 
               target="_blank" 
               rel="noopener noreferrer"
               className={styles.socialLink}
