@@ -1,0 +1,439 @@
+.main {
+  min-height: 100vh;
+  padding-top: 0.5rem;
+  /* background: linear-gradient(180deg, #0a0a0a 0%, #1a1a2e 100%); */
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, rgb(30 41 59) 0%, rgb(88 103 124) 100%);
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+  /* background: (rgb(30 41 59), rgb(88 103 124)); */
+  pointer-events: none;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10rem 2rem 2rem 2rem;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  border-bottom: 1px solid gray;
+
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  /* align-items: center; */
+  position: relative;
+  z-index: 1;
+}
+
+.leftSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -0.02em;
+  /* padding-top: 10vh; */
+  /* text-align: center; */
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  /* line-height: 1.8; */
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.feature:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+}
+
+.featureIcon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+.featureText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.featureText strong {
+  font-size: 1.1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.featureText span {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+.purchaseButton {
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background: linear-gradient(135deg, #7fd05a 0%, #5aa63b 100%);
+  color: #ffffff;
+  padding: 1.25rem 3rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  margin-top: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: fit-content;
+  position: relative;
+  right: 15px;
+  opacity: 0.5;
+}
+
+.purchaseButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+  /* background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); */
+  /* background: linear-gradient(135deg, #5aa63b  0%, #7fd05a 100%); */
+}
+
+.purchaseButton:active {
+  transform: translateY(-1px);
+}
+
+.disclaimer {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  font-style: italic;
+}
+
+.rightSection {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* height: 100%; */
+  margin-top: -4rem;
+}
+
+.roadmapSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+/* .roadmapSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: 0 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+  pointer-events: none;
+} */
+
+.roadmapHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.roadmapTitle {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0.2rem 0 0.8rem;
+}
+
+.roadmapSubtitle {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 720px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+.roadmapLegend {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+}
+
+.legendDot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7fd05a 0%, #5aa63b 100%);
+  box-shadow: 0 0 12px rgba(127, 208, 90, 0.6);
+}
+
+.roadmapGrid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  z-index: 1;
+}
+
+/* .roadmapGrid::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(127, 208, 90, 0.3), rgba(118, 75, 162, 0.3));
+  z-index: -1;
+} */
+
+.milestone,
+.milestoneWide,
+.milestonfuture,
+.milestontoday {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem 1.25rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.milestone::before,
+.milestoneWide::before,
+.milestontoday::before,
+.milestonfuture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(135deg, #7fd05a 0%, #5aa63b 60%, #aaffa7 100%);
+}
+
+.milestonfuture::before {
+  background: linear-gradient(135deg, #828282 0%, #b8b8b8 60%, #ffffff 100%);
+}
+
+.milestontoday::before {
+  background: linear-gradient(135deg, #a3a040 0%, #f4ff2c 60%, #dee728 100%);
+}
+
+.milestone:hover,
+.milestoneWide:hover,
+.milestonfuture:hover,
+.milestontoday:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+
+.milestoneDate {
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.6rem;
+}
+
+.milestone h3 {
+  margin: 0 0 0.6rem;
+  color: #fff;
+  font-size: 1.15rem;
+}
+
+.milestone p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.55;
+}
+
+.milestoneWide h3,
+.milestoneWide p {
+  margin: 0 0 0.6rem;
+}
+
+.milestoneWide {
+  grid-column: span 2;
+}
+
+@media (max-width: 960px) {
+  .roadmapHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .roadmapGrid::before {
+    display: none;
+  }
+
+  .milestoneWide {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .roadmapSection {
+    padding: 2.5rem 1.25rem 4rem;
+  }
+
+  .roadmapSection::before {
+    margin: 0 0.5rem;
+  }
+
+  .roadmapTitle {
+    font-size: 1.8rem;
+  }
+
+  .roadmapSubtitle {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 11vh 1.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .rightSection {
+    margin-top: 0.1rem;
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 70px;
+  }
+
+  .container {
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .feature {
+    padding: 1.2rem;
+    gap: 1rem;
+  }
+
+  .featureIcon {
+    font-size: 1.5rem;
+  }
+
+  .purchaseButton {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    width: 100%;
+
+  }
+}
+
+@media (max-width: 400px) {
+.container {
+  padding-left: 0;
+  padding-right: 0;
+  
+}
+
+.subtitle {
+  font-size: 0.8rem;
+}
+
+}
+
+
+
+.externalLink {
+  color: #7fd05a;
+  
+}
+
+.externalLink:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}

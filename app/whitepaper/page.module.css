@@ -1,0 +1,172 @@
+.main {
+  min-height: 100vh;
+  padding-top: 100px;
+  background: linear-gradient(180deg, rgb(30 41 59) 0%, rgb(88 103 124) 100%);
+  position: relative;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(102, 126, 234, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.content {
+  margin-top: 2rem;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.section:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.sectionText {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.downloadSection {
+  text-align: center;
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.downloadButton {
+  background: linear-gradient(135deg, #7fd05a 0%, #5aa63b 100%);
+  color: #ffffff;
+  padding: 1.25rem 3rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.5;
+}
+
+.downloadButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.5);
+  background: linear-gradient(135deg, #7fd05a 0%, #5aa63b 100%);
+}
+
+.downloadButton:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 1.5rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+  }
+
+  .sectionText {
+    font-size: 1rem;
+  }
+
+  .downloadButton {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+
+
+.tokenomicsGrid {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 14px;
+}
+
+.row > div:nth-child(1) {
+  width: 60px;        
+}
+
+.row > div:nth-child(2) {
+  flex: 1;            
+}
+
+.row > div:nth-child(3) {
+  width: 140px;       
+  opacity: 0.8;
+}
+
+.row > div:nth-child(4) {
+  width: 140px;      
+  text-align: right;
+}
+
+.header {
+  font-weight: 600;
+  opacity: 0.7;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.total {
+  font-weight: 600;
+  /* border-top: 1px solid rgba(255, 255, 255, 0.2); */
+}

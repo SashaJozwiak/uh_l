@@ -1,0 +1,250 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 1rem 0;
+  background-color: rgb(30 41 59);
+  backdrop-filter: blur(10px);
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.15rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  color: inherit;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.logo a:hover {
+  opacity: 0.8;
+}
+
+/* Navigation */
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.navLink {
+  position: relative;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  border: 1px solid transparent;
+  padding: 0 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: #ffffff;
+  border: 1px solid white;
+}
+
+/* underline animation */
+
+/* .navLink::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after,
+.navLink.active::after {
+  width: 100%;
+} */
+
+/* Auth */
+
+.authSection {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.authButton {
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+  background: linear-gradient(135deg, #7fd05a 0%, #5aa63b 100%);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+
+.authButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.authButton:active {
+  transform: translateY(0);
+}
+
+/* Mobile Menu */
+
+.mobileMenu {
+  display: none;
+  position: relative;
+}
+
+.menuButton {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.menuButton:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.menuArrow {
+  transition: transform 0.3s ease;
+}
+
+.menuArrowOpen {
+  transform: rotate(180deg);
+}
+
+.mobileDropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: rgb(88 103 124);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.5rem;
+  min-width: 150px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.mobileNavLink {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+}
+
+.mobileNavLink:hover {
+  color: #ffffff;
+  /* background: rgba(255, 255, 255, 0.05); */
+}
+
+.mobileNavLink.active {
+  color: #ffffff;
+  background: rgb(30 41 59);
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+    align-items: baseline;
+  }
+
+  .authButton {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  .authSection {
+    flex-direction: column;
+  }
+  .logo {
+    font-size: 0.8rem;
+  }
+  .authSection {
+    flex-direction: column-reverse;
+  }
+}
+
+.logo h1 {
+  position: relative;
+  /* font-size: 1.5rem; */
+  font-weight: 800;
+  letter-spacing: -0.15rem;
+}
+
+/* <= 470px */
+@media (max-width: 470px) {
+  .logo h1 {
+    font-size: 0; /* скрываем YouHold */
+  }
+
+  .logo h1::after {
+    content: 'UH';
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: -0.1rem;
+    color: #ffffff;
+  }
+}
