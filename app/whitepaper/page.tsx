@@ -76,7 +76,7 @@ export default function WhitepaperPage() {
     {/* Rows */}
     <div className={styles.row}>
       <div>25%</div>
-      <div>Airdrop | Presale | Farm rewards</div>
+      <div>Drop/Presale/Farm</div>
       <div>Free</div>
       <div>5 000 000</div>
     </div>
