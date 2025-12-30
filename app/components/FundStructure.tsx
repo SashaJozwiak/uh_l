@@ -137,7 +137,7 @@ export default function FundStructure() {
                 console.log('purchase token')
               }}
             >
-              {t('button.purchase')}
+              {t('button.purchase')} {'(soon)'}
             </button>
             {/* <p className={bstyles.disclaimer}>
               {t('disclaimer')}
