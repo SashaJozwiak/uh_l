@@ -1,0 +1,33 @@
+{
+  "name": "YouHold - Cryptocurrency Investment Fund",
+  "short_name": "YouHold",
+  "description": "Open-ended cryptocurrency fund managing diversified assets and a software and gaming development studio",
+  "icons": [
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ],
+  "theme_color": "#1e293b",
+  "background_color": "#1e293b",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/"
+}
+
