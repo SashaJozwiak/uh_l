@@ -98,7 +98,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       'products.company3.title': 'Gamble "Cazik"',
       'products.company3.desc': 'The YouHold app includes slots, roulette, and lotto. Funded through the YouHold app (completed)',
       'products.company4.title': 'UH-Game',
-      'products.company4.desc': 'Card-based roguelike in the cryptocurrency app You Hold (complete)',
+      'products.company4.desc': 'Card-based roguelike in the cryptocurrency app YouHold (complete)',
       
       // News
       'news.title': 'Latest News',
