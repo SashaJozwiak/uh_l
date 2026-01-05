@@ -11,7 +11,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.content}>
           <div className={styles.copyright}>
-            <p>© 2024-2026 | YouHold.online {/* {t('footer.rights')} */}</p>
+            <p>© 2024-2026 | YouHold Fund {/* {t('footer.rights')} */}</p>
           </div>
           <div>
 
