@@ -153,11 +153,11 @@ export default function WhitepaperPage() {
             <h2 className={styles.sectionTitle}>{t('whitepaper.risks.title')}</h2>
             <p className={styles.sectionText}>{t('whitepaper.risks.text')}</p>
           </div>
-          <div className={styles.downloadSection}>
+          {/* <div className={styles.downloadSection}>
             <button className={styles.downloadButton}>
               {t('whitepaper.download')}
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </main>
