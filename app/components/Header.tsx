@@ -111,7 +111,9 @@ export default function Header() {
           <LanguageSelector />
           <button
             className={styles.authButton}
-            onClick={() => (/* window.location.href = '/account' */ console.log('auth'))}
+            onClick={() => {
+              window.open('https://app.youhold.online/', '_blank')
+            }}
           >
             {t('auth.signIn')}
           </button>
