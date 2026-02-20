@@ -110,6 +110,7 @@ export default function Header() {
         <div className={styles.authSection}>
           <LanguageSelector />
           <button
+          style={{ opacity:'1'}}
             className={styles.authButton}
             onClick={() => {
               window.open('https://app.youhold.online/', '_blank')

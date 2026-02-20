@@ -47,7 +47,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       'feature.profit.desc': 'Returns flow back to fund token holders',
       'feature.burn.title': '50% of profits - Token Buyback & Burn',
       'feature.burn.desc': 'Sustainable tokenomics with burn mechanism',
-      'button.purchase': 'Purchase Token',
+      'button.purchase': 'Presale Token',
       'disclaimer': '* Investment involves risk. Please read our white paper before investing.',
       
       // Fund Structure

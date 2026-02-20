@@ -131,13 +131,18 @@ export default function FundStructure() {
 
       <button 
               className={bstyles.purchaseButton}
-              onClick={() => {
+              style={{ opacity:'1'}}
+              /* onClick={() => {
                 // Handle token purchase - redirect to purchase page or open modal
                 //window.location.href = '/purchase'
+                
                 console.log('purchase token')
+              }} */
+              onClick={() => {
+                window.open('https://app.youhold.online/', '_blank')
               }}
             >
-              {t('button.purchase')} {'(soon)'}
+              {t('button.purchase')}
             </button>
             {/* <p className={bstyles.disclaimer}>
               {t('disclaimer')}
